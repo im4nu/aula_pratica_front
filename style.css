@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Kanit', sans-serif;
+}
+
+#hero::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-color: #A9C2CD;
+    display: block;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.inf-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    top: 76px;
+left: 901px;
+width: 118px;
+height: 118px;
+/* UI Properties */
+background: transparent url('img/Grupo de máscara 1.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.title{
+    transform: matrix(0.98, -0.19, 0.19, 0.98, 0, 0);
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 800 50px/120px Kanit;
+    letter-spacing: 0px;
+    color: #1C473C;
+
+    font-size: 3vh;
+
+    margin-top: -3rem;
+}
+
+.content{
+    /* UI Properties */
+    text-align: center;
+    color: #203859;
+    width: 60vw;
+    height: 30vh;
+    font-size: 6vh;
+}
+
+.btn{
+    width: 20vw;
+    height: 10vh;
+    /* UI Properties */
+    border: 4px solid #1C473C;
+    border-radius: 100px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: all, ease 0.5s;
+    margin-top: 8%;
+}
+.btn:hover{
+    background-color: #1c473c7e;
+    transition: all, ease 0.5s;
+}
+.btn a{
+    color: #1C473C;
+    margin: 0 auto;
+
+    text-decoration: none;
+} 
+
+/*===========ABOUT==============*/
+#about::before {
+    content: '';
+    width: 100%;
+    height: 90vh;
+    background-color: #000000;
+    display: block;
+  
+    position: absolute;
+    margin-top: 5vh;
+    left: 0;
+    z-index: -1;
+  }
+  span{
+    color: #F5BEF5;
+  }
+  .about-title{
+    color: #C33608;
+  }
